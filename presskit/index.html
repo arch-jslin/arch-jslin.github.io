@@ -1,0 +1,223 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" value="IE=9">
+<title>Team PSC Presskit</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="validation.js"></script>
+<script>
+	$(window).load( function() {
+		checkVis("factsheet");
+		checkVis("description");
+		checkVis("history");
+		checkVis("projects");
+		checkVis("trailers");
+		checkVis("images");
+		checkVis("logo");
+		checkVis("awards");
+		checkVis("quotes");
+				checkVis("credits");
+		checkVis("contact");
+	} );
+
+	$(window).scroll( function() {
+		checkVis("factsheet");
+		checkVis("description");
+		checkVis("history");
+		checkVis("projects");
+		checkVis("trailers");
+		checkVis("images");
+		checkVis("logo");
+		checkVis("awards");
+		checkVis("quotes");
+				checkVis("credits");
+		checkVis("contact");
+	} );
+
+	function checkVis(elem)
+	{
+		if( isVis( "#"+elem ) ) $("#m-"+elem).css("color","#000"); else $("#m-"+elem).css("color","#666");
+	}
+
+	function isVis(elem)
+	{
+		var docViewTop = $(window).scrollTop();
+		var docViewBottom = docViewTop + $(window).height();
+	
+		var elemTop = $(elem).offset().top;
+		var elemBottom = elemTop + $(elem).height();
+	
+		return ( (elemBottom >= docViewTop && elemBottom <= docViewBottom) || (elemTop <= docViewBottom && elemTop >= docViewTop) || (elemTop <= docViewTop && elemBottom >= docViewBottom) );
+	}
+</script>
+
+<base target="_blank" />
+
+</head>
+
+<body>
+	
+<!-- Page start -->
+<div id="container">
+
+    <!-- Navigation start -->
+    <div id="navigation">
+        <p><h1 id="game-title">Team PSC</h1>
+        <strong><a href="http://cubeat.game.tw/" target="_self">cubeat.game.tw</a></strong></p>
+        <br/>
+        <ul>
+            <li><a href="#factsheet" id="m-factsheet" target="_self">Factsheet</a></li>
+            <li><a href="#description" id="m-description" target="_self">Description</a></li>
+            <li><a href="#history" id="m-history" target="_self">History</a></li>
+        <!--    <li><a href="#projects" id="m-projects" target="_self">Projects</a></li>-->
+            <li><a href="#trailers" id="m-trailers" target="_self">Videos</a></li>
+            <li><a href="#images" id="m-images" target="_self">Images</a></li>
+            <li><a href="#logo" id="m-logo" target="_self">Logo & Icon</a></li><!--
+            <li><a href="#awards" id="m-awards" target="_self">Awards & Recognition</a></li>-->
+            <li><a href="#quotes" id="m-quotes" target="_self">Selected Articles</a></li>
+                        <li><a href="#credits" id="m-credits" target="_self">Team</a></li>
+            <li><a href="#contact" id="m-contact" target="_self">Contact</a></li>
+        </ul>
+    </div>
+    
+    <div id="content">
+        <!-- Header -->
+        <img src="images/header.png" id="header" width="960" />    
+        <!-- Factsheet start -->
+        <div id="factsheet">
+        <h2>Factsheet</h2>
+        
+        <!-- Developer information -->
+        <p><strong>Developer:</strong><br/>
+        <a href="">Team PSC</a><br/>
+        Based in Taiwan<br/></p>
+        
+        <!-- Release date -->
+		<p><strong>Release date:</strong><br/>
+        Fall, 2013<br/></p>
+                
+        <!-- Website -->
+        <p><strong>Website:</strong><br/>
+        <a href="http://cubeat.game.tw/">cubeat.game.tw/</a><br/></p>
+        <!-- Website -->
+        <p><strong>Press / Business Contact:</strong><br/>
+        <a href="mailto:cubeat.contact@gmail.com">cubeat.contact@gmail.com</a><br/></p>        
+        <!-- Pricing -->
+        <p><strong>Social:</strong><br/>
+        <a href="http://facebook.com/cubeatgame">facebook</a><br/><a href="http://twitter.com/cubeatgame">twitter</a><br/><a href="http://plus.google.com/115749363862355695072/">google plus</a><br/>        </p>
+
+        <!-- Platforms -->
+        <!--<p><strong>Releases:</strong><br/>-->
+                </p>
+
+		  
+
+     <!--   <p><strong>Phone:</strong><br/>-->
+
+     <!--   </p>-->
+
+        </div>
+        
+        <!-- Description start -->
+        <div id="right-of-factsheet">
+            <div id="description">
+            <h2>Description</h2>
+            	
+		CuBeat is an intense match-3 game focusing on competitive gameplay, with an uncommon twist: Instead of controlling the dropping cubes, or swapping the stacked cubes, you shoot (take out) the ones you don't want to align the cubes. Bigger matches or chained matches will send blocking cubes to your opponent. Besides the local Multiplayer Mode, the game also contains Story Campaign, and challenge modes like Puzzle Mode and Emergency Rush. Currently we are focusing on the PC version, but we also have working prototypes on OSX, Linux and Android (iOS is also planned), and will release in Fall 2013.
+	            </div>
+            
+            <!-- History start -->
+            <div id="history">
+            <h2>History</h2>        
+			<strong>The Original Concept</strong><p>Kun-Wei was the one who came up with the game idea. He was randomly clicking a few square buttons on a class assignment he wrote back when we were still learning Java in the college. He loved old school light-gun arcade as well, and the idea of mashing the "shooting" concept and a tetris-looking action puzzle seemed quite cool.
+			</p><strong>First Iteration with Light-Guns</strong><p>Since we were asked to do an interactive program with an unconventional input hardware in another course, we actually started to implement this "light-gun" + "match-3 puzzle" idea, with "EMS LCD Topgun" (the tech behind it is actually the same as the Wii Remote which came in the same year, 2007). That was the first iteration of the game.
+			</p><strong>Second Iteration with Wii Remotes</strong><p>A year later we abandoned almost everything except the core gameplay, including no more light-guns, just using 2 Wii Remotes directly to the same functionality, and also changed the art style from cyberspace-wireframe looking to a cartoonish-but-still-blocky and a lot more colorful style. Because we had the idea that "match-3" games are supposed to look "casual", "bright" and "more friendly", etc. To appeal to a broader (and actually should be, or so we thought, the general target for this kind of game) audience.
+			</p><strong>After That</strong><p>At the time, we were not aware of this "indie" concept. After a few more years we finished our compulsory military service and gathered back from our initial day jobs after graduation and then took on this project again, in retrospect, I am not sure if that game style change was a good call or not. I guess we'll have to find out by actually finish and release the game. Incidentally we were also starting to make connections with other developers in the local industry and formed a small community at the same time, while we are sort of coming back together. So, instead of trying to finish the game full-time, we tried to multitask and see if we can somehow work it out.
+			</p><strong>Re-ignition</strong><p>So we continued on collaborating with a real composer, "Waiting@H&&D" Shen, who is proficient in J-pop and retro style music, and a very good artist, also originally our classmate, B.c.N.y, who is now studying at FIT in New York, to revamp the game. We aimed to put the game out there in 2013. Although managing game development and running community at the same time proved to be _VERY_ hard, even just 1 week before TGS 2013, we went on to organized a game jam (a live version of Indie Speed Run), but we won't stop doing either task, because running the community and making the game is equally important to us.
+			</p>            </div>
+            
+            <!-- Features start -->
+     <!--       <div id="projects">
+            <h2>Projects</h2>
+            <ul>-->
+                     <!--   </ul>
+            </div>-->
+		</div>
+
+		<!-- Clear -->
+        <div class="clear" />
+        
+        <!-- Trailers start -->
+        <div id="trailers">
+		<h2>Videos</h2>
+        <p><strong>First trailer</strong> <a href="http://www.youtube.com/watch?v=e2bWFD0e8lI">YouTube</a><iframe width="720" height="396" src="http://www.youtube.com/embed/e2bWFD0e8lI" frameborder="0" allowfullscreen></iframe></p>        </div>
+        
+		<!-- Clear -->
+        <div class="clear" />
+
+        <!-- Screenshots start -->
+        <div id="images">
+        <h2>Images</h2>
+        <a href="images/screenshot6.jpg"><div class="preview-wrapper"><img class="preview" src="images/screenshot6.jpg" alt="screenshot6.jpg" /></div></a><a href="images/screenshot1.jpg"><div class="preview-wrapper"><img class="preview" src="images/screenshot1.jpg" alt="screenshot1.jpg" /></div></a><a href="images/screenshot2.jpg"><div class="preview-wrapper"><img class="preview" src="images/screenshot2.jpg" alt="screenshot2.jpg" /></div></a><a href="images/screenshot5.jpg"><div class="preview-wrapper"><img class="preview" src="images/screenshot5.jpg" alt="screenshot5.jpg" /></div></a><a href="images/screenshot3.jpg"><div class="preview-wrapper"><img class="preview" src="images/screenshot3.jpg" alt="screenshot3.jpg" /></div></a><a href="images/screenshot4.jpg"><div class="preview-wrapper"><img class="preview" src="images/screenshot4.jpg" alt="screenshot4.jpg" /></div></a><p style="clear:both">There are far more images available for Team PSC, but these are the ones we felt would be most useful to you. If you have specific requests, please do <a href="#contact" target="_self">contact us</a>!</p>        
+        </div>
+        
+		<!-- Clear -->
+        <div class="clear" />
+
+        <!-- Logo start -->
+        <div id="logo">
+        <h2>Logo & Icon</h2>
+        <a href="images/logo.png"><img src="images/logo.png" alt="logo" /></a><a href="images/logo2.png"><img src="images/logo2.png" alt="logo2" /></a><a href="images/icon.png"><img src="images/icon.png" alt="logo" /></a>        </div>
+        
+		<!-- Clear -->
+        <div class="clear" />
+
+        <!-- Award start -->
+     <!--   <div id="awards">
+        <h2>Awards & Recognition</h2>
+        <ul>-->
+                <!--</ul>
+        </div>-->
+        
+		<!-- Clear -->
+        <!--<div class="clear" />-->
+
+        <!-- Quote start -->
+        <div id="quotes">
+        <h2>Selected Articles</h2>
+        <ul>
+        <li>"It sounds simple, but that’s perfect for competitive play." <br/>
+				<cite>- Dale North, <a href="http://destructoid.com/tokyo-game-show-indie-showing-a-good-start-262388.phtml/">destructoid</a></cite></li><li>"Tokyo Game Show 2013 – CuBeat Indie Interview" <br/>
+				<cite>- Omid Ahourai, <a href="http://omidahourai.com/2013-09-25/tokyo-game-show-2013-indie-interviews/">ArdentKid</a></cite></li>        </ul>
+        </div>
+        
+		<!-- Clear -->
+        <div class="clear" />
+
+        <!-- Links -->
+                
+        
+        <!-- Credits -->
+        <div id="credits">
+        <h2>Team & Repeating<br/>Collaborators</h2>
+        <p><strong>Johnson Lin</strong><br/>Produce, Design, Programming</p><p><strong>Kun-Wei Lin</strong><br/><a href="http://kwl.vcity.biz/blog/">Game design, UI design, Scenario</a></p><p><strong>B.c.N.y.</strong><br/><a href="http://bcnyart.tumblr.com/">Character design and graphics, Character animation,Stage design and graphics</a></p><p><strong>Waiting@H&&D</strong><br/><a href="http://tw.streetvoice.com/users/mwt/">Music composing</a></p><p><strong>Max Lai</strong><br/>UI programming</p>        </div>
+        
+        <!-- Contact -->
+        <div id="contact">
+        <h2>Contact</h2>
+        <p><strong>Contact E-mail</strong><br/><a href="mailto:cubeat.contact@gmail.com">cubeat.contact@gmail.com</a><p><strong>Twitter</strong><br/><a href="http://twitter.com/cubeatgame">twitter.com/cubeatgame</a><p><strong>Facebook</strong><br/><a href="http://facebook.com/cubeatgame">facebook.com/cubeatgame</a><p><strong>Website</strong><br/><a href="http://cubeat.game.tw">cubeat.game.tw</a>        </div>
+
+		<!-- Clear -->
+        <div class="clear" />
+
+		<p class="credits"><a href="http://dopresskit.com/">presskit()</a> by Rami Ismail (<a href="http://www.vlambeer.com/">Vlambeer</a>) - also thanks to <a href="sheet.php?p=credits">these fine folks</a></p>
+
+    </div>
+</div>
+
+</body>
+</html>
