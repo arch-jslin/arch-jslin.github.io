@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<game>	
+	<title>Team PSC</title>
+	<website>http://cubeat.game.tw/</website>
+	<based-in>Taiwan</based-in>
+	<founding-date>Fall, 2013</founding-date>
+	
+	<press-contact>cubeat.contact@gmail.com</press-contact>
+
+	<socials>
+		<social>
+			<name>facebook</name>
+			<link>https://www.facebook.com/cubeatgame</link>
+		</social>
+		<social>
+			<name>twitter</name>
+			<link>https://twitter.com/cubeatgame</link>
+		</social>
+		<social>
+			<name>google plus</name>
+			<link>https://plus.google.com/115749363862355695072/</link>
+		</social>
+	</socials>
+
+	<description>	
+		CuBeat is an intense match-3 game focusing on competitive gameplay, with an uncommon twist: Instead of controlling the dropping cubes, or swapping the stacked cubes, you shoot (take out) the ones you don't want to align the cubes. Bigger matches or chained matches will send blocking cubes to your opponent. Besides the local Multiplayer Mode, the game also contains Story Campaign, and challenge modes like Puzzle Mode and Emergency Rush. Currently we are focusing on the PC version, but we also have working prototypes on OSX, Linux and Android (iOS is also planned), and will release in Fall 2013.
+	</description>
+		
+	<histories>
+		<history>
+			<header>The Original Concept</header>
+			<text>Kun-Wei was the one who came up with the game idea. He was randomly clicking a few square buttons on a class assignment he wrote back when we were still learning Java in the college. He loved old school light-gun arcade as well, and the idea of mashing the "shooting" concept and a tetris-looking action puzzle seemed quite cool.
+			</text>
+		</history>
+		<history>
+			<header>First Iteration with Light-Guns</header>
+			<text>Since we were asked to do an interactive program with an unconventional input hardware in another course, we actually started to implement this "light-gun" + "match-3 puzzle" idea, with "EMS LCD Topgun" (the tech behind it is actually the same as the Wii Remote which came in the same year, 2007). That was the first iteration of the game.
+			</text>
+		</history>
+		<history>
+			<header>Second Iteration with Wii Remotes</header>
+			<text>A year later we abandoned almost everything except the core gameplay, including no more light-guns, just using 2 Wii Remotes directly to the same functionality, and also changed the art style from cyberspace-wireframe looking to a cartoonish-but-still-blocky and a lot more colorful style. Because we had the idea that "match-3" games are supposed to look "casual", "bright" and "more friendly", etc. To appeal to a broader (and actually should be, or so we thought, the general target for this kind of game) audience.
+			</text>
+		</history>
+		<history>
+			<header>After That</header>
+			<text>At the time, we were not aware of this "indie" concept. After a few more years we finished our compulsory military service and gathered back from our initial day jobs after graduation and then took on this project again, in retrospect, I am not sure if that game style change was a good call or not. I guess we'll have to find out by actually finish and release the game. Incidentally we were also starting to make connections with other developers in the local industry and formed a small community at the same time, while we are sort of coming back together. So, instead of trying to finish the game full-time, we tried to multitask and see if we can somehow work it out.
+			</text>
+		</history>
+		<history>
+			<header>Re-ignition</header>
+			<text>So we continued on collaborating with a real composer, "Waiting@H&amp;&amp;D" Shen, who is proficient in J-pop and retro style music, and a very good artist, also originally our classmate, B.c.N.y, who is now studying at FIT in New York, to revamp the game. We aimed to put the game out there in 2013. Although managing game development and running community at the same time proved to be _VERY_ hard, even just 1 week before TGS 2013, we went on to organized a game jam (a live version of Indie Speed Run), but we won't stop doing either task, because running the community and making the game is equally important to us.
+			</text>
+		</history>
+	</histories>
+		
+	<trailers>
+		<trailer>
+			<name>First trailer</name>
+			<youtube>e2bWFD0e8lI</youtube>
+		</trailer>
+	</trailers>
+	<quotes>
+		<quote>
+			<description>It sounds simple, but that&#8217;s perfect for competitive play.</description>
+			<name>Dale North</name>
+			<website>destructoid</website>
+			<link>http://www.destructoid.com/tokyo-game-show-indie-showing-a-good-start-262388.phtml</link>
+		</quote>
+		<quote>
+			<description>Tokyo Game Show 2013 – CuBeat Indie Interview</description>
+			<name>Omid Ahourai</name>
+			<website>ArdentKid</website>
+			<link>http://www.omidahourai.com/2013-09-25/tokyo-game-show-2013-indie-interviews</link>
+		</quote>
+	</quotes>
+
+	
+	<credits>
+		<credit>
+			<person>Johnson Lin</person>
+			<role>Produce, Design, Programming</role>
+		</credit>
+		<credit>
+			<person>Kun-Wei Lin</person>
+			<website>kwl.vcity.biz/blog</website>
+			<role>Game design, UI design, Scenario</role>
+		</credit>
+		<credit>
+			<person>B.c.N.y.</person>
+			<website>bcnyart.tumblr.com</website>
+			<role>Character design and graphics, Character animation,Stage design and graphics</role>
+		</credit>
+		<credit>
+			<person>Waiting@H&amp;&amp;D</person>
+			<website>tw.streetvoice.com/users/mwt</website>
+			<role>Music composing</role>
+		</credit>
+		<credit>
+			<person>Max Lai</person>
+			<role>UI programming</role>
+		</credit>
+	</credits>
+	
+	<contacts>
+		<contact>
+			<name>Contact E-mail</name>
+			<mail>cubeat.contact@gmail.com</mail>
+		</contact>
+		<contact>
+			<name>Twitter</name>
+			<link>http://twitter.com/cubeatgame</link>
+		</contact>
+		<contact>
+			<name>Facebook</name>
+			<link>http://www.facebook.com/cubeatgame</link>
+		</contact>
+		<contact>
+			<name>Website</name>
+			<link>cubeat.game.tw</link>
+		</contact>
+	</contacts>
+</game>
