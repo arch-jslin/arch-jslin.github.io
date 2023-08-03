@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html><!-- InstanceBegin template="/Templates/game.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>方塊遊戲研究所</title>
+<!-- InstanceEndEditable -->
+<link href="../../APGL.css" rel="stylesheet" type="text/css">
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable --><!-- InstanceParam name="OPT-extend" type="boolean" value="true" --><!-- InstanceParam name="OPT-secret" type="boolean" value="true" -->
+</head>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-3029659-2");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<body>
+<div align="center">
+  <table width="800" border="0" cellpadding="0" cellspacing="0">
+    <tr bgcolor="#CCCC00">
+      <td colspan="2"><div align="left"><img src="../../banner.gif" alt=""></div></td>
+    </tr>
+    <tr>
+      <td valign="top" bgcolor="#CCCC66" class="text"><table border="0" align="center" cellspacing="15">
+        <tr>
+          <td><p align="center"><a href="../../index.htm">最新消息</a></p>
+              <p align="center"><a href="../../platform.htm">平台檢索</a></p>
+              <p align="center"><a href="../../about.htm">關於本站</a></p>
+              <p align="center"><a href="http://cubeat.game.tw/phpBB3" target="_blank">留言討論</a></p>
+              <p align="center"><a href="http://cubeat.game.tw/apgl"><img src="../../apgl-banner-8831.gif" alt="" width="88" height="31" border="0"></a></p>
+              <p align="center"><a href="http://cubeat.game.tw" target="_blank"><img src="../../cubeat-banner-8831.gif" alt="" width="88" height="31" border="0"></a></p></td>
+        </tr>
+      </table></td>
+      <td bgcolor="#FFFF99"><table class="block">
+          <tr>
+            <td colspan="2" bgcolor="#CCCC00" class="text">基本資料</td>
+          </tr>
+          <tr>
+            <td valign="top" class="text"><p>
+                  遊戲名稱(日)：<!-- InstanceBeginEditable name="nameJ" -->ぷよぷよ<!-- InstanceEndEditable --><br>
+                遊戲名稱(英)：<!-- InstanceBeginEditable name="nameE" -->Puyo Puyo<!-- InstanceEndEditable --><br>
+                  遊戲名稱(中)：<!-- InstanceBeginEditable name="nameC" -->魔法氣泡<!-- InstanceEndEditable --><br>
+                  <br>
+                製作廠商：<!-- InstanceBeginEditable name="maker" -->COMPILE<!-- InstanceEndEditable --><br>
+                  發行廠商：<!-- InstanceBeginEditable name="publisher" -->SEGA<!-- InstanceEndEditable --><br>
+  遊戲平台：<!-- InstanceBeginEditable name="platform" -->MEGA DRIVE<!-- InstanceEndEditable --><br>
+  發行日期：<!-- InstanceBeginEditable name="date" -->1992/12/18<!-- InstanceEndEditable --><br>
+  原始售價：￥<!-- InstanceBeginEditable name="price" -->4800<!-- InstanceEndEditable --><br>
+  遊戲容量：<!-- InstanceBeginEditable name="size" -->512KB<!-- InstanceEndEditable --></p>
+            </td>
+          <td class="text"><div align="right"><!-- InstanceBeginEditable name="pic-t" --><img src="images/puyo-t.gif" width="320" height="224" alt=""><!-- InstanceEndEditable --></div></td>
+          </tr>
+        </table>
+        <table class="block">
+          <tr>
+            <td bgcolor="#CCCC00" class="text">遊戲介紹</td>
+          </tr>
+          <tr>
+            <td class="text"><!-- InstanceBeginEditable name="contents" -->
+              <p>AC版ぷよぷよ的移植，由於AC版所使用的SYSTEM C2基板與MD主機之間具有上位互換性， 因此MD版在畫面、操作性、流暢度等各方面的移植表現上都相當的忠實，不過由於容量與音效晶片差異上的因素，MD版刪除了角色登場以及勝利時的語音，發動連鎖時的語音也只剩二連鎖時會發出一段，更高的連鎖只用音效帶過，而且語音撥出時會使得背景音樂暫時停止。</p>
+              <p> 除了AC版就具有的單人與雙人對戰模式外，MD版多出了「とことんぷよぷよ」模式，本模式不具對戰性質，而是以單純追求高分的方式進行。</p>
+              <p>SEGA曾經將本作與MD主機同梱販售，使得本作一時成為MD的看板軟體。</p>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table>
+        <table class="block">
+        <tr>
+          <td colspan="2" bgcolor="#CCCC00" class="text">遊戲畫面</td>
+        </tr>
+        <tr>
+          <td width="320" class="text"><div align="right"><!-- InstanceBeginEditable name="pic-1" --><img src="images/puyo-1.gif" width="320" height="224" alt=""><!-- InstanceEndEditable --></div></td>
+          <td width="320" class="text"><!-- InstanceBeginEditable name="pic-2" --><img src="images/puyo-2.gif" width="320" height="224" alt=""><!-- InstanceEndEditable --></td>
+        </tr>
+        <tr>
+          <td width="320" class="text"><div align="right"><!-- InstanceBeginEditable name="pic-3" --><img src="images/puyo-3.gif" width="320" height="224" alt=""><!-- InstanceEndEditable --></div></td>
+        <td width="320" class="text"><!-- InstanceBeginEditable name="pic-4" --><img src="images/puyo-4.gif" width="320" height="224" alt=""><!-- InstanceEndEditable --></td>
+        </tr>
+      </table>
+        
+        <table class="block">
+          <tr>
+            <td bgcolor="#CCCC00" class="text">遊戲秘技</td>
+          </tr>
+          <tr>
+            <td class="text"><!-- InstanceBeginEditable name="secret" -->阻止COM對手的高速落下<br>
+與電腦對戰時，持續按著2P手把的方向鍵左或右，將使得COM對手無法將氣泡高速落下。<br>
+<br>
+隱藏角色<br>
+在「ふたりでぷよぷよ」(雙人對戰模式)中，任何一方取得100勝時，隱藏角色「サタン」將會登場。<br>
+<br>
+SOUND TEST模式 <br>
+在任何難度下全破一次遊戲，或者在標題畫面依序按下「A、A、左、B、B、左、C、C」(輸入成功時會出現效果音)，在 「おぷしょん」(OPTION)項目中將會追加サウンドテスト(SOUND TEST)選項。<!-- InstanceEndEditable --></td>
+          </tr>
+        </table>
+        
+        <table class="block">
+          <tr>
+            <td bgcolor="#CCCC00" class="text">版本備考</td>
+          </tr>
+          <tr>
+            <td class="text"><!-- InstanceBeginEditable name="versions" --><a href="../ac/puyo.htm">AC</a>、MD、<a href="../sfc/puyo.htm">SFC</a>、PCE-CD、<a href="../gg/puyo.htm">GG</a>、GB、Wii(VC)、PC(數種)、攜帶電話(數種)、PDA(數種)<!-- InstanceEndEditable --></td>
+          </tr>
+        </table>
+        
+        <table class="block">
+          <tr>
+            <td bgcolor="#CCCC00" class="text">延伸閱讀</td>
+          </tr>
+          <tr>
+            <td class="text"><!-- InstanceBeginEditable name="extend" -->
+              <p><a href="http://vc.sega.jp/vc_puyo/" target="_blank">SEGA Virtual Console ぷよぷよ遊戲介紹</a></p>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table>
+        </td>
+    </tr>
+    <tr bgcolor="#CCCC00">
+      <td colspan="2" class="text"><table border="0" align="center" cellspacing="10">
+          <tr>
+            <td><div align="center"> 方塊遊戲研究所 © Action Puzzle Games Laboratory All Rights Reserved.<br>
+            </div></td>
+          </tr>
+      </table></td>
+    </tr>
+  </table>
+  <p>
+    <script type="text/javascript"><!--
+google_ad_client = "pub-4501296407264977";
+/* APGLadsense */
+google_ad_slot = "0213903772";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+    </script>
+    <script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+  </p>
+</div>
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,31 @@
+.text {
+	font-size: small;
+	
+}
+.block {
+	background-color: #FFFFCC;
+	width: 659px;
+	text-align: left;
+	padding: 0px;
+	margin: 10px;
+	border: 2px solid #CCCC66;
+}
+a{
+	color: #996600;	
+}
+a:visited {
+	color: #CC9900;
+}
+.border {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-bottom-color: #CCCC00;
+	font-size: small;
+	padding: 0px;
+}

@@ -1,0 +1,356 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>方塊遊戲研究所</title>
+<link href="../../APGL.css" rel="stylesheet" type="text/css">
+</head>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-3029659-2");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<body>
+<div align="center">
+  <table width="800" border="0" cellpadding="0" cellspacing="0">
+    <tr bgcolor="#CCCC00">
+      <td colspan="2"><div align="left"><img src="../../banner.gif" alt=""></div></td>
+    </tr>
+    <tr>
+      <td valign="top" bgcolor="#CCCC66" class="text"><table border="0" align="center" cellspacing="15">
+        <tr>
+          <td><p align="center"><a href="../../index.htm">最新消息</a></p>
+              <p align="center"><a href="../../platform.htm">平台檢索</a></p>
+              <p align="center"><a href="../../about.htm">關於本站</a></p>
+              <p align="center"><a href="http://cubeat.game.tw/phpBB3" target="_blank">留言討論</a></p>
+              <p align="center"><a href="http://cubeat.game.tw/apgl"><img src="../../apgl-banner-8831.gif" alt="" width="88" height="31" border="0"></a></p>
+              <p align="center"><a href="http://cubeat.game.tw" target="_blank"><img src="../../cubeat-banner-8831.gif" alt="" width="88" height="31" border="0"></a></p></td>
+        </tr>
+      </table></td>
+      <td bgcolor="#FFFF99"><table class="block">
+        <tr>
+          <td colspan="2" bgcolor="#CCCC00" class="text">平台簡介</td>
+        </tr>
+        <tr>
+          <td valign="top" class="text"><p>NINTENDO DS</p>
+            <p>2004年NINTENDO發行</p>
+            <p>簡稱NDS，最初的定位上是與GAME BOY系列不同的「異質產品」，具有雙螢幕且下螢幕為觸控螢幕，並具有麥克風、Wi-Fi無線網路，也可以使用GBA的遊戲卡匣。在發售一年多後推出了輕量化的改款NDSL(Lite)。</p>
+            <p>NDS剛開始是以不同以往的操作性與創新遊戲吸引玩家，之後則以一連串「腦力訓練」等非正規遊戲類型的軟體引起一陣風潮，加上許多優良的遊戲作品，使得NDS成為史上銷售速度最快的主機。</p>
+            </td>
+          <td valign="top" class="text"><div align="right"><img src="nds.gif" width="320" height="240" alt=""></div></td>
+        </tr>
+      </table>      <table class="block">
+          <tr>
+            <td colspan="5" bgcolor="#CCCC00" class="text">方塊遊戲一覽</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">日文標題</td>
+            <td valign="top" class="border">英文標題</td>
+            <td valign="top" class="border">中文標題</td>
+            <td valign="top" class="border">發行廠商</td>
+            <td valign="top" class="border">年代</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">直感ヒトフデ</td>
+            <td valign="top" class="border">Polarium</td>
+            <td valign="top" class="border">直感一筆</td>
+            <td valign="top" class="border">NINTENDO</td>
+            <td valign="top" class="border">2004</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ズーキーパー</td>
+            <td valign="top" class="border">Zoo Keeper </td>
+            <td valign="top" class="border">動物管理員</td>
+            <td valign="top" class="border">SUCCESS</td>
+            <td valign="top" class="border">2004</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ぷよぷよフィーバー</td>
+            <td valign="top" class="border">Puyo Puyo Fever </td>
+            <td valign="top" class="border">狂熱魔法氣泡</td>
+            <td valign="top" class="border">SEGA</td>
+            <td valign="top" class="border">2004</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">メテオス</td>
+            <td valign="top" class="border">Meteos</td>
+            <td valign="top" class="border">行星保衛戰</td>
+            <td valign="top" class="border">BANDAI</td>
+            <td valign="top" class="border">2005</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">パズルボブルＤＳ</td>
+            <td valign="top" class="border">Puzzle Bobble DS </td>
+            <td valign="top" class="border">益智泡泡龍DS</td>
+            <td valign="top" class="border">TAITO</td>
+            <td valign="top" class="border">2005</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ポケモントローゼ</td>
+            <td valign="top" class="border">Pokemon Trozei</td>
+            <td valign="top" class="border">神奇寶貝益智方塊</td>
+            <td valign="top" class="border">NINTENDO</td>
+            <td valign="top" class="border">2005</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ぷよぷよフィーバー２</td>
+            <td valign="top" class="border">Puyo Puyo Fever 2 </td>
+            <td valign="top" class="border">狂熱魔法氣泡2</td>
+            <td valign="top" class="border">SEGA</td>
+            <td valign="top" class="border">2005</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ひっぱって！! パズルボブル</td>
+            <td valign="top" class="border">Hippatte! Puzzle Bobble</td>
+            <td valign="top" class="border">彈射！益智泡泡龍</td>
+            <td valign="top" class="border">TAITO</td>
+            <td valign="top" class="border">2006</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">瞬感パズループ</td>
+            <td valign="top" class="border">Shunkan Puzz Loop</td>
+            <td valign="top" class="border">瞬間解惑迷圈</td>
+            <td valign="top" class="border">NINTENDO</td>
+            <td valign="top" class="border">2006</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">モンスターボンバー</td>
+            <td valign="top" class="border">Monster Bomber</td>
+            <td valign="top" class="border">怪獸爆破機</td>
+            <td valign="top" class="border">TAITO</td>
+            <td valign="top" class="border">2006</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ソロエルパズル　童話王国</td>
+            <td valign="top" class="border">Soroeru Puzzle Douwa Oukoku</td>
+            <td valign="top" class="border">童話王國</td>
+            <td valign="top" class="border">SUCCESS</td>
+            <td valign="top" class="border">2006</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">テトリスＤＳ</td>
+            <td valign="top" class="border">Tetris DS </td>
+            <td valign="top" class="border">俄羅斯方塊DS</td>
+            <td valign="top" class="border">NINTENDO</td>
+            <td valign="top" class="border">2006</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">頭を鍛えて遊ぶ対戦矢印パズル<br>
+            パピぃぬベクター１</td>
+            <td valign="top" class="border">  Puppynu Vector One </td>
+            <td valign="top" class="border">頭腦鍛鍊對戰箭頭益智遊戲<br> 
+            向量小狗 1</td>
+            <td valign="top" class="border">MEGACYBER</td>
+            <td valign="top" class="border">2006</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ミロンのほしぞらしゃぼん<br>
+            パズル組曲</td>
+            <td valign="top" class="border">Milon no Hoshizora Shabon<br>
+            Puzzle Kumikyoku</td>
+            <td valign="top" class="border">米隆的星空氣泡<br>
+            益智組曲</td>
+            <td valign="top" class="border">HUDSON</td>
+            <td valign="top" class="border">2006</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">気持ちよさ連鎖パズル<br>
+            トリオンキューブ</td>
+            <td valign="top" class="border">Trion Cube</td>
+            <td valign="top" class="border">3X3方塊</td>
+            <td valign="top" class="border">BANDAI NAMCO </td>
+            <td valign="top" class="border">2006</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">脳内覚醒ハニカムビート</td>
+            <td valign="top" class="border">Honeycomb Beat</td>
+            <td valign="top" class="border">腦內覺醒</td>
+            <td valign="top" class="border">HUDSON</td>
+            <td valign="top" class="border">2006</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">音をつなごう！<br>
+            グンペイ りば～す♪</td>
+            <td valign="top" class="border">Gunpey DS</td>
+            <td valign="top" class="border">連結音樂！<br>
+            翻轉線條方塊</td>
+            <td valign="top" class="border">BANDAI NAMCO </td>
+            <td valign="top" class="border">2006</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ぷよぷよ！</td>
+            <td valign="top" class="border">Puyo Puyo! </td>
+            <td valign="top" class="border">魔法氣泡<br>
+              15週年紀念版</td>
+            <td valign="top" class="border">SEGA</td>
+            <td valign="top" class="border">2006</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">くるポト</td>
+            <td valign="top" class="border">Kurupoto</td>
+            <td valign="top" class="border">旋轉方陣球</td>
+            <td valign="top" class="border">STARFISH-SD</td>
+            <td valign="top" class="border">2007</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">パネルでポンＤＳ</td>
+            <td valign="top" class="border">Panel de Pon DS</td>
+            <td valign="top" class="border">面板方塊DS</td>
+            <td valign="top" class="border">NINTENDO</td>
+            <td valign="top" class="border">2007</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">メテオス<br>
+            ディズニー・マジック</td>
+            <td valign="top" class="border">Meteos Disney Magic</td>
+            <td valign="top" class="border">行星保衛戰<br>
+              迪士尼魔法</td>
+            <td valign="top" class="border">DISNEY</td>
+            <td valign="top" class="border">2007</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">数陣タイセン</td>
+            <td valign="top" class="border">Suujin Taisen </td>
+            <td valign="top" class="border">數陣對戰</td>
+            <td valign="top" class="border">NINTENDO</td>
+            <td valign="top" class="border">2007</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ぷちぷちウイルス</td>
+            <td valign="top" class="border">Puchi Puchi Virus </td>
+            <td valign="top" class="border">病毒防線</td>
+            <td valign="top" class="border">JALECO</td>
+            <td valign="top" class="border">2007</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">つんでツミキス</td>
+            <td valign="top" class="border">Tsunde Tsumi Kiss</td>
+            <td valign="top" class="border">積木方塊</td>
+            <td valign="top" class="border">RED</td>
+            <td valign="top" class="border">2007</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ょすみん。DS</td>
+            <td valign="top" class="border">Yosumin. DS</td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">SQUARE ENIX </td>
+            <td valign="top" class="border">2007</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">SIMPLE DSシリーズ Vol.23<br> 
+            THE パズルクエスト<br>
+            ～アガリアの騎士～</td>
+            <td valign="top" class="border">Puzzle Quest  <br>
+            Challenge of the Warlords</td>
+            <td valign="top" class="border">益智冒險<br>
+亞加利亞的騎士</td>
+            <td valign="top" class="border">D3 PUBLISHER</td>
+            <td valign="top" class="border">2007</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">SuperLite2500<br>
+            女子高生逃げる！<br>
+            心霊パズル学園</td>
+            <td valign="top" class="border"> Super Lite 2500 <br>
+              Joshikousei Nigeru! <br>
+            Shinrei Puzzle Gakuen </td>
+            <td valign="top" class="border"> SuperLite2500<br>
+            女子高生逃脫！<br>
+            心靈益智學園 </td>
+            <td valign="top" class="border">SUCCESS</td>
+            <td valign="top" class="border">2008</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">仔犬でくるりん</td>
+            <td valign="top" class="border"> Koinu Dekururin </td>
+            <td valign="top" class="border">幼犬轉轉樂園</td>
+            <td valign="top" class="border">MTO</td>
+            <td valign="top" class="border">2008</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">くわがたツマミ　<br>
+            くっつけ！ツマミ箱</td>
+            <td valign="top" class="border">Kuwagata Tsumami<br>
+            Kuttsuke! Tsumami Hako</td>
+            <td valign="top" class="border">鍬型蟲少女 益智方塊</td>
+            <td valign="top" class="border">SUCCESS</td>
+            <td valign="top" class="border">2008</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">タッチで退却！<br>
+            やわらか戦車</td>
+            <td valign="top" class="border">Touch de Taikyaku! <br>
+            Yawaraka Sensha</td>
+            <td valign="top" class="border">觸碰撤退！<br>
+            軟綿綿戰車</td>
+            <td valign="top" class="border">SUCCESS</td>
+            <td valign="top" class="border">2008</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">対戦！！<br>
+            加トちゃんのころろんぺ </td>
+            <td valign="top" class="border">Taisen!!<br> 
+            Kato-Chan no Kororonpe</td>
+            <td valign="top" class="border">加藤茶的益智對戰！</td>
+            <td valign="top" class="border">CYBER FRONT</td>
+            <td valign="top" class="border">2008</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">スペース パズルボブル</td>
+            <td valign="top" class="border">Space Puzzle Bobble </td>
+            <td valign="top" class="border">太空益智泡泡龍</td>
+            <td valign="top" class="border">TAITO</td>
+            <td valign="top" class="border">2008</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">遊べる英語<br>
+            ワードマジックDS</td>
+            <td valign="top" class="border"> Asoberu Eigo<br> 
+            Word Magic DS </td>
+            <td valign="top" class="border">可以玩的英語<br>
+              文字魔法DS</td>
+            <td valign="top" class="border">SHINGAKUSHA</td>
+            <td valign="top" class="border">2008</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ぷよぷよ7</td>
+            <td valign="top" class="border">Puyo Puyo 7 </td>
+            <td valign="top" class="border">魔法氣泡7</td>
+            <td valign="top" class="border">SEGA</td>
+            <td valign="top" class="border">2009</td>
+          </tr>
+          <tr>
+            <td colspan="5" valign="top" class="border"><span class="text">(NDS為現役機種，方塊遊戲總量可能將持續增加)</span></td>
+          </tr>
+        </table>        </td>
+    </tr>
+    <tr bgcolor="#CCCC00">
+      <td colspan="2" class="text"><table border="0" align="center" cellspacing="10">
+          <tr>
+            <td><div align="center"> 方塊遊戲研究所 © Action Puzzle Games Laboratory All Rights Reserved.<br>
+            </div></td>
+          </tr>
+      </table></td>
+    </tr>
+  </table>
+  <p>
+    <script type="text/javascript"><!--
+google_ad_client = "pub-4501296407264977";
+/* APGLadsense */
+google_ad_slot = "0213903772";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+    </script>
+    <script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+  </p>
+</div>
+</body>
+</html>

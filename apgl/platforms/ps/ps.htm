@@ -1,0 +1,811 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>方塊遊戲研究所</title>
+<link href="../../APGL.css" rel="stylesheet" type="text/css">
+</head>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-3029659-2");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<body>
+<div align="center">
+  <table width="800" border="0" cellpadding="0" cellspacing="0">
+    <tr bgcolor="#CCCC00">
+      <td colspan="2"><div align="left"><img src="../../banner.gif" alt=""></div></td>
+    </tr>
+    <tr>
+      <td valign="top" bgcolor="#CCCC66" class="text"><table border="0" align="center" cellspacing="15">
+        <tr>
+          <td><p align="center"><a href="../../index.htm">最新消息</a></p>
+              <p align="center"><a href="../../platform.htm">平台檢索</a></p>
+              <p align="center"><a href="../../about.htm">關於本站</a></p>
+              <p align="center"><a href="http://cubeat.game.tw/phpBB3" target="_blank">留言討論</a></p>
+              <p align="center"><a href="http://cubeat.game.tw/apgl"><img src="../../apgl-banner-8831.gif" alt="" width="88" height="31" border="0"></a></p>
+              <p align="center"><a href="http://cubeat.game.tw" target="_blank"><img src="../../cubeat-banner-8831.gif" alt="" width="88" height="31" border="0"></a></p></td>
+        </tr>
+      </table></td>
+      <td bgcolor="#FFFF99"><table class="block">
+          <tr>
+            <td colspan="2" bgcolor="#CCCC00" class="text">平台簡介</td>
+          </tr>
+          <tr>
+            <td valign="top" class="text"><p>PLAYSTATION</p>
+            <p>1994年SONY發行</p>
+            <p>簡稱PS，為SONY的首台家用主機，在硬體性能及售價上取得良好的平衡點，並以嶄新的銷售及宣傳方式為電玩業界帶來相當多的改變，是電玩業界市場型態的一個重大轉戾點。</p>
+            <p>PS身為32位元世代的主流主機，各類軟體的數量都相當龐大，有眾多的名作在此平台發跡或繼續發展，也有不少新型態的實驗式遊戲推出。PS的成功也為後繼機奠定了勝利的基礎。</p></td>
+          <td valign="top" class="text"><div align="right"><img src="ps.gif" width="320" height="240" alt=""></div></td>
+          </tr>
+        </table>
+        <table class="block">
+          <tr>
+            <td colspan="5" bgcolor="#CCCC00" class="text">方塊遊戲一覽</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border"><p>日文標題</p></td>
+            <td valign="top" class="border">英文標題</td>
+            <td valign="top" class="border">中文標題</td>
+            <td valign="top" class="border">發行廠商</td>
+            <td valign="top" class="border">年代</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ツインビー対戦ぱずるだま</td>
+            <td valign="top" class="border">TwinBee Taisen Puzzle Dama</td>
+            <td valign="top" class="border">兵蜂對戰方塊</td>
+            <td valign="top" class="border">KONAMI</td>
+            <td valign="top" class="border">1994</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ジオキューブ</td>
+            <td valign="top" class="border">Geom Cube </td>
+            <td valign="top" class="border">幾何方塊</td>
+            <td valign="top" class="border">TECHNOS</td>
+            <td valign="top" class="border">1994</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">宇宙生物フロポンくんP!</td>
+            <td valign="top" class="border">Space Creature Furopon P!</td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">ASMIK</td>
+            <td valign="top" class="border">1995</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">へべれけスてーショん <br>
+            ポポイっと</td>
+            <td valign="top" class="border">Hebereke Station Popoitto</td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">SUNSOFT</td>
+            <td valign="top" class="border">1995</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">くるりんPA！</td>
+            <td valign="top" class="border">Kururin Pa!</td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">SKY THINK SYSTEM</td>
+            <td valign="top" class="border">1995</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ブレイクスルー！</td>
+            <td valign="top" class="border">Break Thru!</td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">SHOEISHA</td>
+            <td valign="top" class="border">1995</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">でろーんでろでろ</td>
+            <td valign="top" class="border">Dero-n Dero Dero</td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">TECMO</td>
+            <td valign="top" class="border">1995</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">マジカルドロップ</td>
+            <td valign="top" class="border">Magical Drop</td>
+            <td valign="top" class="border">魔幻彩球</td>
+            <td valign="top" class="border"> DATA EAST </td>
+            <td valign="top" class="border">1996</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">進め！対戦ぱずるだま</td>
+            <td valign="top" class="border">Susume! Taisen Puzzle Dama</td>
+            <td valign="top" class="border">前進！對戰方塊</td>
+            <td valign="top" class="border">KONAMI</td>
+            <td valign="top" class="border">1996</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">パズルボブル2</td>
+            <td valign="top" class="border">Puzzle Bubble 2 </td>
+            <td valign="top" class="border">益智泡泡龍2</td>
+            <td valign="top" class="border">TAITO</td>
+            <td valign="top" class="border">1996</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">テトリスX</td>
+            <td valign="top" class="border">Tetris X </td>
+            <td valign="top" class="border">俄羅斯方塊X</td>
+            <td valign="top" class="border">BPS</td>
+            <td valign="top" class="border">1996</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">めざせ！ 戦球王</td>
+            <td valign="top" class="border">Mezase! Ikusa Tama Oh</td>
+            <td valign="top" class="border">戰球王</td>
+            <td valign="top" class="border">SEIBU KAIHATSU</td>
+            <td valign="top" class="border">1996</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">unStack アンスタック</td>
+            <td valign="top" class="border">unStack</td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">SYSTEM CREATE </td>
+            <td valign="top" class="border">1996</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">VADIMS
+
+
+ バディムス </td>
+            <td valign="top" class="border">Vadims</td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">SOFT BANK </td>
+            <td valign="top" class="border">1996</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">蟲の居所</td>
+            <td valign="top" class="border">Mushi no Idokoro</td>
+            <td valign="top" class="border">蟲的居所</td>
+            <td valign="top" class="border">GEN SOFT</td>
+            <td valign="top" class="border">1996</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">新型くるりんPA！</td>
+            <td valign="top" class="border">Shingata Kururin Pa!</td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">SKY THINK SYSTEM</td>
+            <td valign="top" class="border">1996</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">るぷぷキューブ <br>
+            ルプ☆さらだる</td>
+            <td valign="top" class="border">Lupupu Cube<br>
+            Lup Salad</td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">DATAM POLYSTAR </td>
+            <td valign="top" class="border">1996</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">テトリスプラス</td>
+            <td valign="top" class="border">Tetris Plus </td>
+            <td valign="top" class="border">俄羅斯方塊加強版</td>
+            <td valign="top" class="border">JALECO</td>
+            <td valign="top" class="border">1996</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ときめきメモリアル<br>
+            対戦ぱずるだま</td>
+            <td valign="top" class="border">Tokimeki Memorial <br>
+Taisen Puzzle Dama</td>
+            <td valign="top" class="border">純愛手扎對戰方塊</td>
+            <td valign="top" class="border">KONAMI</td>
+            <td valign="top" class="border">1996</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ぷくんパ <br>
+            女子高生の放課後…</td>
+            <td valign="top" class="border">Pukunpa <br>
+            Joshikousei no Houkago... <br></td>
+            <td valign="top" class="border">女子高生放課後方塊</td>
+            <td valign="top" class="border">ATHENA</td>
+            <td valign="top" class="border">1996</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">くるくるトゥインクル<br>
+            ～おねがいおほしさま～</td>
+            <td valign="top" class="border">KuruKuru Twinkle<br>
+            Onegaioho Shisama</td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">TOMY</td>
+            <td valign="top" class="border">1996</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ビルクラッシュ！</td>
+            <td valign="top" class="border">Building Crush! </td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">SHOEISHA</td>
+            <td valign="top" class="border">1996</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">バーミン・キッズ</td>
+            <td valign="top" class="border">Vermin Kids</td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">EA</td>
+            <td valign="top" class="border">1996</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ぷよぷよ通 決定盤</td>
+            <td valign="top" class="border">Puyo Puyo Tsu Ketteiban</td>
+            <td valign="top" class="border">魔法氣泡2</td>
+            <td valign="top" class="border">COMPILE</td>
+            <td valign="top" class="border">1996</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ズープ</td>
+            <td valign="top" class="border">Zoop</td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">MEDIA QUEST</td>
+            <td valign="top" class="border">1996</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">スーパーパズルファイターII X</td>
+            <td valign="top" class="border">Super Puzzle Fighter II X </td>
+            <td valign="top" class="border">超級快打方塊</td>
+            <td valign="top" class="border">CAPCOM</td>
+            <td valign="top" class="border">1996</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">くるくるパニック</td>
+            <td valign="top" class="border">Kuru Kuru Panic</td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">KOOL KIZZ</td>
+            <td valign="top" class="border">1996</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">両替パズルゲーム<br>
+もうぢや</td>
+            <td valign="top" class="border">Ryougae Puzzle Game <br>
+Moudjiya</td>
+            <td valign="top" class="border">金錢貓方塊</td>
+            <td valign="top" class="border">VIRGIN INTERACTIVE <br>
+ENTERTAINMENT </td>
+            <td valign="top" class="border">1997</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">HAUNTEDじゃんくしょん <br>
+            聖徒会バッジを追え！</td>
+            <td valign="top" class="border">Haunted Junction<br>
+            Seitokai Badge wo Oe!</td>
+            <td valign="top" class="border">靈異獵人</td>
+            <td valign="top" class="border"> MEDIAWORKS </td>
+            <td valign="top" class="border">1997</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">I.Q Intelligent Qube</td>
+            <td valign="top" class="border">I.Q Intelligent Qube</td>
+            <td valign="top" class="border">IQ方塊</td>
+            <td valign="top" class="border">SCE</td>
+            <td valign="top" class="border">1997</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ときめきメモリアル<br>
+            対戦とっかえだま</td>
+            <td valign="top" class="border">Tokimeki Memorial <br>
+Taisen Tokkaedama</td>
+            <td valign="top" class="border">純愛手扎對戰方塊2</td>
+            <td valign="top" class="border">KONAMI</td>
+            <td valign="top" class="border">1997</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">パズルアリーナ闘神伝</td>
+            <td valign="top" class="border">Puzzle Arena Toshinden</td>
+            <td valign="top" class="border">鬥神傳方塊</td>
+            <td valign="top" class="border">TAKARA</td>
+            <td valign="top" class="border">1997</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">STRESSLESS LESSONれすれす</td>
+            <td valign="top" class="border">Stressless Lesson Les Les </td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">MAXFIVE</td>
+            <td valign="top" class="border">1997</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ぱすてるみゅーず</td>
+            <td valign="top" class="border">Pastel Muse</td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">SOFT OFFICE </td>
+            <td valign="top" class="border">1997</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">サイキックフォース <br>
+            パズル大戦</td>
+            <td valign="top" class="border">Psychic Force Puzzle Taisen</td>
+            <td valign="top" class="border">超能力格鬥 <br>
+            益智大戰</td>
+            <td valign="top" class="border">TAITO</td>
+            <td valign="top" class="border">1997</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">Cu-On-Pa</td>
+            <td valign="top" class="border">Cu-On-Pa</td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">T&amp;E SOFT </td>
+            <td valign="top" class="border">1997</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">マジカルドロップIII <br>
+            よくばり特大号！</td>
+            <td valign="top" class="border">Magical Drop III </td>
+            <td valign="top" class="border">魔幻彩球3</td>
+            <td valign="top" class="border">DATAEAST</td>
+            <td valign="top" class="border">1997</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">トリパズ</td>
+            <td valign="top" class="border">Tripuzz</td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">SONTOG</td>
+            <td valign="top" class="border">1997</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">スタースィープ</td>
+            <td valign="top" class="border">Star Sweep </td>
+            <td valign="top" class="border">星星方塊</td>
+            <td valign="top" class="border">AXELA</td>
+            <td valign="top" class="border">1997</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">パズルボブル3デラックス</td>
+            <td valign="top" class="border">Puzzle Bubble 3 DX </td>
+            <td valign="top" class="border">益智泡泡龍3 DX</td>
+            <td valign="top" class="border">TAITO</td>
+            <td valign="top" class="border">1997</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">カルコロ！おちものシューティング</td>
+            <td valign="top" class="border">Calcolo!</td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">CLEF</td>
+            <td valign="top" class="border">1997</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">伸縮対戦 It's a のに～！</td>
+            <td valign="top" class="border">Shinshuku Taisen <br>
+            It's a Noni!</td>
+            <td valign="top" class="border">伸縮對戰</td>
+            <td valign="top" class="border">TMF</td>
+            <td valign="top" class="border">1997</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ぷよぷよSUN 決定盤</td>
+            <td valign="top" class="border">Puyo Puyo Sun Ketteiban</td>
+            <td valign="top" class="border">魔法氣泡3</td>
+            <td valign="top" class="border">COMPILE</td>
+            <td valign="top" class="border">1997</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">S.Q. サウンドキューブ</td>
+            <td valign="top" class="border">S.Q. Sound Qube</td>
+            <td valign="top" class="border">S.Q.聲音方塊</td>
+            <td valign="top" class="border">HUMAN</td>
+            <td valign="top" class="border">1998</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">NOON</td>
+            <td valign="top" class="border">NOON</td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">MICRO CABIN</td>
+            <td valign="top" class="border">1998</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">プロ野球<br>
+            熱闘ぱずるスタジアム</td>
+            <td valign="top" class="border">Pro Yakyuu <br>
+            Nettou Puzzle Stadium</td>
+            <td valign="top" class="border">熱鬥野球方塊</td>
+            <td valign="top" class="border">COCONUTS</td>
+            <td valign="top" class="border">1998</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">XI[sai]</td>
+            <td valign="top" class="border">XI[sai]</td>
+            <td valign="top" class="border">骰子方塊</td>
+            <td valign="top" class="border">SCE</td>
+            <td valign="top" class="border">1998</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ハローキティのキューブでキュート</td>
+            <td valign="top" class="border">Hello Kitty no Cube de Cute </td>
+            <td valign="top" class="border">凱蒂貓的可愛方塊</td>
+            <td valign="top" class="border">CULTURE <br>
+            PUBLISHIERS</td>
+            <td valign="top" class="border">1998</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">プチカラット</td>
+            <td valign="top" class="border">Puchi Carat</td>
+            <td valign="top" class="border">鑽石方塊</td>
+            <td valign="top" class="border"> TAITO</td>
+            <td valign="top" class="border">1998</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ピキーニャ！エクセレンテ</td>
+            <td valign="top" class="border">Pikinya! EX</td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">ASCII</td>
+            <td valign="top" class="border">1998</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">パズルボブル4</td>
+            <td valign="top" class="border">Puzzle Bubble 4 </td>
+            <td valign="top" class="border"><p>益智泡泡龍4</p>            </td>
+            <td valign="top" class="border">TAITO</td>
+            <td valign="top" class="border">1998</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">プリンセスメーカー <br>
+            ポケット大作戦</td>
+            <td valign="top" class="border">Princess Maker <br>
+            Pocket Dai-sakusen</td>
+            <td valign="top" class="border">美少女夢工廠<br>
+              口袋大作戰</td>
+            <td valign="top" class="border">NINELIVES</td>
+            <td valign="top" class="border">1998</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">にじいろトゥインクル <br>
+            ぐるぐる大作戦</td>
+            <td valign="top" class="border">Nijiiro Twinkle <br>
+            Guruguru Dai-sakusen</td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">ASCII</td>
+            <td valign="top" class="border">1998</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">Ｕ．Ｐ．Ｐ．</td>
+            <td valign="top" class="border">U.P.P.</td>
+            <td valign="top" class="border">U.P.P.</td>
+            <td valign="top" class="border">PANTHER <br>
+            SOFTWARE</td>
+            <td valign="top" class="border">1998</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">つんつん組<br>
+            ～すうじでぷにぷに～</td>
+            <td valign="top" class="border">Tsun Tsun Kumi<br>
+            Suuji de Puni Puni</td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">KODANSHA</td>
+            <td valign="top" class="border">1998</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ROX ロックス</td>
+            <td valign="top" class="border">ROX 6=Six </td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">ALTRON</td>
+            <td valign="top" class="border">1998</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ぽっぷんぽっぷ</td>
+            <td valign="top" class="border">Pop'n Pop </td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">TAITO</td>
+            <td valign="top" class="border">1998</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">マネーアイドル エクスチェンジャー</td>
+            <td valign="top" class="border">Money Idol Exchanger</td>
+            <td valign="top" class="border">錢幣對抗賽</td>
+            <td valign="top" class="border">ATHENA</td>
+            <td valign="top" class="border">1998</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">I.Qファイナル</td>
+            <td valign="top" class="border">I.Q Final </td>
+            <td valign="top" class="border">究極IQ方塊</td>
+            <td valign="top" class="border">SCE</td>
+            <td valign="top" class="border">1998</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ザ ネクスト テトリス</td>
+            <td valign="top" class="border">The Next Tetris </td>
+            <td valign="top" class="border">俄羅斯方塊NEXT</td>
+            <td valign="top" class="border">BPS</td>
+            <td valign="top" class="border">1999</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">マジカルドロップIII＋ワンダホー!</td>
+            <td valign="top" class="border">Magical Drop III + Wonderful!</td>
+            <td valign="top" class="border">魔幻彩球3加強版</td>
+            <td valign="top" class="border">DATA EAST</td>
+            <td valign="top" class="border">1999</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">マジカル テトリス チャレンジ<br>
+    featuring ミッキー</td>
+            <td valign="top" class="border">Magical Tetris Challenge<br>
+    featuring Mickey</td>
+            <td valign="top" class="border">米老鼠俄羅斯方塊</td>
+            <td valign="top" class="border">CAPCOM</td>
+            <td valign="top" class="border">1999</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">たまごDEパズル</td>
+            <td valign="top" class="border">Tamago de Puzzle</td>
+            <td valign="top" class="border">蛋蛋方塊</td>
+            <td valign="top" class="border">SCE</td>
+            <td valign="top" class="border">1999</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">キャデラック</td>
+            <td valign="top" class="border">Cadillac</td>
+            <td valign="top" class="border">凱迪拉克</td>
+            <td valign="top" class="border">HECTOR</td>
+            <td valign="top" class="border">1999</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ふぃんがあ★ふらっしんぐ</td>
+            <td valign="top" class="border">Finger Flashing </td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border"> AFECT </td>
+            <td valign="top" class="border">1999</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">マジカルドロップF <br>
+            大冒険もラクじゃない！</td>
+            <td valign="top" class="border">Magical Drop F<br>
+            Daibouken Mo Rakujyanai!</td>
+            <td valign="top" class="border">魔幻彩球F</td>
+            <td valign="top" class="border">DATA EAST </td>
+            <td valign="top" class="border">1999</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">SIMPLE1500シリーズVol.20 <br>
+            THEパズル</td>
+            <td valign="top" class="border">Simple 1500 Series Vol.20<br>
+              The Puzzle </td>
+            <td valign="top" class="border">簡單1500系列<br>
+益智遊戲</td>
+            <td valign="top" class="border">D3 PUBLISHER</td>
+            <td valign="top" class="border">1999</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ランドメーカー</td>
+            <td valign="top" class="border">Land Maker </td>
+            <td valign="top" class="border">方城戰略物語</td>
+            <td valign="top" class="border">TAITO</td>
+            <td valign="top" class="border">1999</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ぷよぷよ～ん <br>
+            カーくんといっしょ</td>
+            <td valign="top" class="border">Puyo Puyo~n <br>
+            Kakkun to Issho</td>
+            <td valign="top" class="border">魔法氣泡4<br>
+              與紅玉同在</td>
+            <td valign="top" class="border">COMPILE</td>
+            <td valign="top" class="border">1999</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">グンペイ</td>
+            <td valign="top" class="border">Gunpey</td>
+            <td valign="top" class="border">線條方塊</td>
+            <td valign="top" class="border">BANDAI</td>
+            <td valign="top" class="border">1999</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ザ ネクスト テトリス デラックス</td>
+            <td valign="top" class="border">The Next Tetris DXL </td>
+            <td valign="top" class="border">俄羅斯方塊NEXT DXL</td>
+            <td valign="top" class="border">BPS</td>
+            <td valign="top" class="border">1999</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">トール ∞</td>
+            <td valign="top" class="border">Tall ∞</td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">TECHNO SOLEIL </td>
+            <td valign="top" class="border">1999</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">XI[sai] JUMBO</td>
+            <td valign="top" class="border">XI[sai] JUMBO</td>
+            <td valign="top" class="border">骰子方塊JUMBO</td>
+            <td valign="top" class="border">SCE</td>
+            <td valign="top" class="border">1999</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">カードキャプターさくら<br> 
+            クロウカードマジック</td>
+            <td valign="top" class="border">Cardaptor Sakura
+
+
+              <br>
+            Clowcard Magic</td>
+            <td valign="top" class="border">庫洛魔法使<br>
+              庫洛牌魔法</td>
+            <td valign="top" class="border">ARIKA</td>
+            <td valign="top" class="border">2000</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">アディのおくりもの</td>
+            <td valign="top" class="border">To Moze From Addie </td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">SCE</td>
+            <td valign="top" class="border">2000</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">パズループ</td>
+            <td valign="top" class="border">Puzz Loop </td>
+            <td valign="top" class="border">旋轉泡泡</td>
+            <td valign="top" class="border">CAPCOM</td>
+            <td valign="top" class="border">2000</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">SuperLite 1500シリーズ<br>
+ ザ・テトリス <br>
+</td>
+            <td valign="top" class="border">SuperLite 1500 Series<br>
+            The Tetris </td>
+            <td valign="top" class="border">簡單1500系列<br>
+俄羅斯方塊</td>
+            <td valign="top" class="border">SUCCESS</td>
+            <td valign="top" class="border">2000</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">TETRIS withカードキャプターさくら<br> 
+            エターナルハート</td>
+            <td valign="top" class="border">Tetris with Cardaptor Sakura<br> 
+            Eternal Heart</td>
+            <td valign="top" class="border">庫洛魔法使<br>
+              俄羅斯方塊</td>
+            <td valign="top" class="border">ARIKA</td>
+            <td valign="top" class="border">2000</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">カートンくん</td>
+            <td valign="top" class="border">Katon-Kun</td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">IREM</td>
+            <td valign="top" class="border">2000</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">トール ツインズタワー</td>
+            <td valign="top" class="border">Tall Twins Tower </td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border"> TECHNO SOLEIL </td>
+            <td valign="top" class="border">2000</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">SIMPLE1500シリーズVol.46<br> 
+            THE麻雀落ちゲー 落雀</td>
+            <td valign="top" class="border">Simple 1500 Series Vol.46<br>
+            Raku Jongg</td>
+            <td valign="top" class="border">簡單1500系列<br>
+            落雀</td>
+            <td valign="top" class="border">D3 PUBLISHER</td>
+            <td valign="top" class="border"><p>2000</p>            </td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">SIMPLE1500シリーズVol.48 <br>
+            THEパズル2</td>
+            <td valign="top" class="border">Simple 1500 Series Vol.48<br>
+The Puzzle 2 </td>
+            <td valign="top" class="border">簡單1500系列<br>
+              益智遊戲2</td>
+            <td valign="top" class="border">D3 PUBLISHER</td>
+            <td valign="top" class="border">2000</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ぷよぷよBOX</td>
+            <td valign="top" class="border">Puyo Puyo Box </td>
+            <td valign="top" class="border">魔法氣泡Box</td>
+            <td valign="top" class="border">COMPILE</td>
+            <td valign="top" class="border">2000</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ゼラちゃんパズル<br>
+            ぴたっとぺア</td>
+            <td valign="top" class="border">Zera-Chan Puzzle<br>
+            Pitatto Pair</td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">AFFECT</td>
+            <td valign="top" class="border">2001</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ときめきメモリアル2<br>
+            対戦ぱずるだま</td>
+            <td valign="top" class="border">Tokimeki Memorial 2<br>
+Taisen  Puzzle Dama</td>
+            <td valign="top" class="border">純愛手扎2<br>
+            對戰方塊</td>
+            <td valign="top" class="border">KONAMI</td>
+            <td valign="top" class="border">2001</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">テクノビービー</td>
+            <td valign="top" class="border">Techno BB </td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">KONAMI</td>
+            <td valign="top" class="border">2001</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">クレオパトラ フォーチュン</td>
+            <td valign="top" class="border">Cleopatra Fortune</td>
+            <td valign="top" class="border">埃及豔后方塊</td>
+            <td valign="top" class="border">ALTRON</td>
+            <td valign="top" class="border">2001</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">SIMPLEキャラクター2000シリーズ<br> 
+            アフロ犬THEパズル</td>
+            <td valign="top" class="border">Simple Characters 2000 Vol. 2<br>
+            Afro Inu The Puzzle</td>
+            <td valign="top" class="border">簡單角色2000系列<br>
+            阿福柔犬方塊</td>
+            <td valign="top" class="border">BANDAI</td>
+            <td valign="top" class="border">2001</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">ブリードマスター</td>
+            <td valign="top" class="border">Breed Master </td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">OFFICE CREATE </td>
+            <td valign="top" class="border">2002</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">お天気ころりん</td>
+            <td valign="top" class="border">Otenki Kororin</td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">TAKUMI</td>
+            <td valign="top" class="border">2002</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">パイプドリーム 3D</td>
+            <td valign="top" class="border">Pipe Dream 3D </td>
+            <td valign="top" class="border">接水管3D</td>
+            <td valign="top" class="border">SYSCOM <br>
+            ENTERTAINMENT</td>
+            <td valign="top" class="border">2002</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">SuperLite 1500シリーズ<br>
+            キーパー</td>
+            <td valign="top" class="border">SuperLite 1500 series<br>
+            Keeper</td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">SUCCESS</td>
+            <td valign="top" class="border">2002</td>
+          </tr>
+          <tr>
+            <td valign="top" class="border">とことこトラブル<br>
+            ～地球イタダキ!～</td>
+            <td valign="top" class="border">Toko Toko Trouble</td>
+            <td valign="top" class="border">(從缺)</td>
+            <td valign="top" class="border">MEDIA <br>
+            ENTERTAINMENT </td>
+            <td valign="top" class="border">2003</td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr bgcolor="#CCCC00">
+      <td colspan="2" class="text"><table border="0" align="center" cellspacing="10">
+          <tr>
+            <td><div align="center"> 方塊遊戲研究所 © Action Puzzle Games Laboratory All Rights Reserved.<br>
+            </div></td>
+          </tr>
+      </table></td>
+    </tr>
+  </table>
+  <p>
+    <script type="text/javascript"><!--
+google_ad_client = "pub-4501296407264977";
+/* APGLadsense */
+google_ad_slot = "0213903772";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+    </script>
+    <script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+  </p>
+</div>
+</body>
+</html>
